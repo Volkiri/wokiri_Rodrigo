@@ -1,0 +1,128 @@
+HTML
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <title>PORTAL DO ALUNO</title>
+    <script src="https://kit.fontawesome.com/d86df33570.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <h1>Boletim Aluno </h1>
+    <table class="table">
+
+      <div>
+        <b>Nome: Alex S.</b>
+      </div>
+      
+	  <div>
+	  <b> Escola: Equestria.</b>
+	  </div>
+	  
+	  <div>
+	  <b>N° 24</b>
+	  <b>Turma: 9°</b>
+	  <b>Turno: Manhã</b>
+        <tr>
+          <th>Matéria</th>
+          <th>1° trimestre</th>
+          <th>2° trimestre</th>
+          <th>3° trimestre</th>
+        </tr>
+
+        <tr>
+          <td>Matemática</td>
+          <td>6,5</td>
+          <td>7,5</td>
+          <td>9,0</td>
+        </tr>
+
+        <tr>
+          <td>Português</td>
+          <td>9,0</td>
+          <td>10,0</td>
+          <td>10,0</td>
+        </tr>
+
+        <tr>
+          <td>Inglês</td>
+          <td>3,5</td>
+          <td>5,5</td>
+          <td>7,0</td>
+        </tr>
+
+        <tr>
+          <td>Fisica</td>
+          <td>6,8</td>
+          <td>7,5</td>
+          <td>8,0</td>
+        </tr>
+
+        <tr>
+          <td>Historia</td>
+          <td>7,8</td>
+          <td>9,5</td>
+          <td>10,0</td>
+        </tr>
+
+        <tr>
+          <td>Geografia</td>
+          <td>2,0</td>
+          <td>5,9</td>
+          <td>6,5</td>
+        </tr>
+
+        <tr>
+          <td>Fisica</td>
+          <td>7,9</td>
+          <td>4,8</td>
+          <td>6,6</td>
+        </tr>
+
+    </table>
+
+
+  </body>
+
+</html>
+
+CSS
+body{
+	background-color: #08687E;
+	font-family: arial;
+}
+h1{
+	text-align: center;
+	letter-spacing: 2px;
+	color: #FAA635;
+}
+table{
+	margin: auto;
+	background-color: white;
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+tr:nth-child(2n+2){
+	background-color: #ddd;
+}
+td:not(:first-child){
+	padding: 10px;
+}
+
+img{
+	display: block;
+	object-fit: fill;
+}
+
+
+
