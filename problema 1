@@ -1,0 +1,52 @@
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tela de Login</title>
+</head>
+<body>
+	<div id="bloco-login">
+	<img id="logo-senac" src=https://i0.wp.com/multarte.com.br/wp-content/uploads/2020/09/senac-logo.png?resize=696%2C387&ssl=1 >
+	<h3>SENAC | Portal do Aluno</h3>
+<div>
+	 <div>
+	    <input class="input-login" type="text" placeholder="Login">
+	 </div>
+		<div>
+		<input class="input-login" type="password" maxlength="6" placeholder="Senha">
+     </div>
+	 </div>
+	 <div>
+		<button>Login</button>
+	</div>
+</div>
+</body>
+</html>
+
+CSS
+
+body{
+	text-align: center;
+}
+#bloco-login{
+    margin: 0 auto;
+	background-color: lightblue;
+	border-radius: 10px;
+	width: 400px;
+	padding: 20px;
+}
+#logo-senac{
+	width: 100px;
+	height: 50px;
+}
+.input-login{
+	margin: 5px;
+	width: 300px;
+	height: 25px;
+}
+#btn-entrar{
+	margin-top: 20px;
+	width: 100px;
+	height: 30px;
+}
+
