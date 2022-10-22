@@ -1,0 +1,195 @@
+html
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="form-validation.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+
+  <div class="container">
+    <div class="row">
+      <img class="d-block mx-auto mb-4" src="https://sescro.com.br/wp-content/uploads/2021/11/sesc-assinatura-2021.png" width="90%">
+    </div>
+  </div>
+
+  <h4 class="mb-3">Cadastro</h4>
+  <form class="needs-validation" novalidate="">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="primeiroNome">Nome</label>
+        <input type="text" class="form-control" id="primeiroNome" placeholder="" value="" required="">
+        <div class="invalid-feedback">
+          É obrigatório inserir um nome válido.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" class="form-control" id="sobrenome" placeholder="" value="" required="">
+        <div class="invalid-feedback">
+          É obrigatório inserir um sobre nome válido.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="nickname">Nickname</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+
+        </div>
+        <input type="text" class="form-control" id="nickname" placeholder="Nickname" required="">
+        <div class="invalid-feedback" style="width: 100%;">
+          Seu nickname é obrigatório.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="email">Email <span class="text-muted"></span></label>
+      <input type="email" class="form-control" id="email" placeholder="fulano@exemplo.com">
+      <div class="invalid-feedback">
+        Por favor, insira um endereço de e-mail válido, para atualizações de entrega.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="endereco">CPF</label>
+      <input class="form-control" type="text" required pattern="\d{11}" placeholder="000.000.000-00">
+      <div class="invalid-feedback">
+        Por favor, insira seu endereço de entrega.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="endereco2">Data de nascimento </label>
+      <p>
+        <input class="form-control" type="date" required min="1922-08-02">
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5 mb-3">
+        <label for="pais">País</label>
+        <select class="custom-select d-block w-100" id="pais" required="">
+          <option value="">Escolha...</option>
+          <option>Brasil</option>
+          <option>Afeganistão</option>
+          <option>África do Sul</option>
+          <option>Albânia</option>
+          <option>Alemanha</option>
+          <option>Andorra</option>
+          <option>Angola</option>
+          <option>Arábia Saudita</option>
+          <option>Argélia</option>
+          <option>Argentina</option>
+          <option>Arménia</option>
+          <option>Austrália</option>
+          <option>Áustria</option>
+          <option>Azerbaijão</option>
+          <option>Bahamas</option>
+          <option>Bangladexe</option>
+          <option>Barbados</option>
+          <option>Barém</option>
+          <option>Bélgica</option>
+          <option>Dominica</option>
+          <option>Egito</option>
+          <option>Emirados Árabes Unidos</option>
+          <option>Equador</option>
+          <option>Marrocos</option>
+          <option>Maurícia</option>
+          <option>Mauritânia</option>
+          <option>México</option>
+          <option>Mianmar</option>
+          <option>Micronésia</option>
+          <option>Portugal</option>-
+          <option>Quiribáti</option>
+
+
+        </select>
+        <div class="invalid-feedback">
+          Por favor, escolha um país válido.
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="estado">Estado</label>
+        <select class="custom-select d-block w-100" id="estado" required="">
+          <option value="">Escolha...</option>
+          <option>Acre</option>
+        </select>
+        <div class="invalid-feedback">
+          Por favor, insira um estado válido.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="cep">CEP</label>
+        <input type="text" class="form-control" id="cep" placeholder="" required="">
+        <div class="invalid-feedback">
+          É obrigatório inserir um CEP.
+        </div>
+      </div>
+    </div>
+    <hr class="mb-4">
+	<a href="https://jsfiddle.net/Laryssa/5a9gyujL/41/"><button class="btn btn-primary btn-lg btn-block" type="submit">Continue o cadastro</button></a>
+  </form>
+  </div>
+
+</body>
+
+
+
+
+
+
+
+CSS
+
+.container {
+  max-width: 960px;
+}
+
+.lh-condensed {
+  line-height: 1.25;
+}
+
+JavaScsript
+
+src = "https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin = "anonymous" > < /script> <
+  script > window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>') < /script> <
+  script src = "../../assets/js/vendor/popper.min.js" > < /script> <
+  script src = "../../dist/js/bootstrap.min.js" > < /script> <
+  script src = "../../assets/js/vendor/holder.min.js" > < /script> <
+  script >
+  // Exemplo de JavaScript para desativar o envio do formulário, se tiver algum campo inválido.
+  (function() {
+    'use strict';
+
+    window.addEventListener('load', function() {
+      // Selecione todos os campos que nós queremos aplicar estilos Bootstrap de validação customizados.
+      var forms = document.getElementsByClassName('needs-validation');
+
+      // Faz um loop neles e previne envio
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
