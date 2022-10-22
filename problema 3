@@ -1,0 +1,88 @@
+HTML
+
+<!DOCTYPE html>
+<html>
+
+  <body>
+  
+  <div id="bloco">
+
+    <form>
+        <div id="nome">
+          <span>NOME;</span>
+          <input id="nome" />
+
+        </div>
+
+        <div id="nota1">
+          <span>NOTA1;</span>
+          <input id="nota1" />
+
+        </div>
+
+        <div id="nota2">
+          <span>NOTA2;</span>
+          <input id="nota2" />
+
+        </div>
+
+        <div id="nota3">
+          <span>NOTA3;</span>
+          <input id="nota3" />
+
+        </div>
+    </form>
+
+    <div id=botao-deletar>
+      <button onclick="calcular()">calcular</button>
+    </div>
+
+    <div id="resultado">
+	</div>
+    </div>
+
+  </body>
+
+</html>
+
+CSS
+#bloco{  
+	margin: 0 auto;
+	background-color: #22357B;
+    border-radius: 5px;
+    width: 220px;
+    padding: 20px;
+}
+
+div {
+  margin: 10px;
+}
+
+span {
+  display: inline-block;
+  width: 70px;
+  color: #F5F4F4;
+}
+
+JavaScript
+ function calcular() {
+   var nome = document.getElementById("nome").value;
+
+   var nota1 =  parseFloat(document.getElementById("nota1").value);
+
+   var nota2 =  parseFloat(document.getElementById("nota2").value);
+
+   var nota3 =  parseFloat(document.getElementById("nota3").value);
+   
+   var media = (nota1 + nota2 + nota3) / 3;
+   
+   if(media >= 7){
+   		document.getElementById("resultado").innerHTML = "APROVADO";
+   }else if (media >= 5){
+    	document.getElementById("resultado").innerHTML = "RECUPERAÇÃO";
+   }else{
+   		document.getElementById("resultado").innerHTML = "REPROVADO";
+   }
+ }
+
+
